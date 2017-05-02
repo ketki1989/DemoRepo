@@ -1,0 +1,38 @@
+<apex:page sidebar="false" docType="html-5.0" controller="ReleaseWindowConfigController">
+<apex:form >
+   <apex:pageBlock mode="edit" title="Admin Maintenance window">
+            <apex:pageBlockButtons location="top" >  
+               <apex:commandButton id="EditButton" value="Edit" action="{!EdittheSection}"/>  
+               <apex:commandButton id="saveButton" action="{!saveme}" value="Save"/>  
+               <apex:commandButton id="cancelButton" action="{!cancelme}" value="Cancel"/>
+                
+            </apex:pageBlockButtons> 
+        
+            <apex:pageBlockTable value="{!lstReleaseWindow}" var="m" rows="3" columns="1">
+            
+            <apex:column >
+            
+                 <apex:pageBlockSection rendered="{!editSection}">
+                      <apex:inputField value="{!m.UserLockoutStatus__c}"/>
+                      <br/><br/>
+                      <apex:inputField value="{!m.Release_Start_Date__c}"/>
+                      <br/><br/>
+                      <apex:inputField value="{!m.Release_End_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                  <apex:pageBlockSection rendered="{!NOT(editSection)}">
+                      <apex:outputField value="{!m.UserLockoutStatus__c}"/>
+                        <br/> <br/>
+                     <apex:outputField value="{!m.Release_Start_Date__c}"/>
+                        <br/><br/>
+                 <apex:outputField value="{!m.Release_Start_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                  
+           </apex:column>
+           </apex:pageBlockTable>
+   
+  </apex:pageBlock>
+  </apex:form>
+
+</apex:page>

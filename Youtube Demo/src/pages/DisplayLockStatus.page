@@ -1,0 +1,11 @@
+<apex:page controller="DisplayLockStatusController"  >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: DisplayLockStatus
+  <!-- End Default Content REMOVE THIS -->
+ <apex:pageBlock >
+    <apex:outputText escape="false" value="{!DisplayCurrentDate}"></apex:outputText> <BR/>
+ 
+  <apex:outputText escape="false" value="{!OutputSomeDate}"></apex:outputText>
+   </apex:pageBlock>
+</apex:page>

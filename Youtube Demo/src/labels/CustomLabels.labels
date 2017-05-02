@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>SalesforceUsers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SalesforceUsers</shortDescription>
+        <value>To All Salesforce Users :</value>
+    </labels>
+    <labels>
+        <fullName>message1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>message1</shortDescription>
+        <value>There is Salesforce planned maintenance scheduled  where system will be temporarily unavailable between</value>
+    </labels>
+    <labels>
+        <fullName>message2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>message2</shortDescription>
+        <value>Any questions or concerns ,please contact the help desk at</value>
+    </labels>
+</CustomLabels>

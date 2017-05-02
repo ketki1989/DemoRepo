@@ -1,0 +1,63 @@
+<apex:page standardController="Release_Tracker__c"  sidebar="false"  extensions="Release_Tracker_Extensions"  docType="html-5.0">
+
+    <style>
+
+    .colStyle1 { width: 16.5%; padding: 3px 0 5px 0;    text-align:right;}
+
+
+    </style>
+
+    <apex:form >
+        <apex:pageBlock >
+
+            <apex:pageBlockSection title="Admin Window"  columns="1">
+                <apex:panelGrid border="0"  columnClasses="colStyle1" >
+
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Release Name " for="{!Release_Tracker__c.name}"/>
+
+                        <apex:inputText value="{!Release_Tracker__c.name}" />
+
+                    </apex:pageBlockSectionItem>
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Release Start Date " for="{!Release_Tracker__c.Start_Date__c}"/>
+                        <apex:inputField showDatePicker="true" value="{!Release_Tracker__c.Start_Date__c}" />
+
+                    </apex:pageBlockSectionItem>
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Release End Date " for="{!Release_Tracker__c.End__c}"/>
+                        <apex:inputField showDatePicker="true" value="{!Release_Tracker__c.End__c}" />
+                   </apex:pageBlockSectionItem>
+
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Status" for="{!Release_Tracker__c.Status__c}"/>
+                        <apex:inputField value="{!Release_Tracker__c.Status__c}"/> 
+                    </apex:pageBlockSectionItem>
+
+
+                </apex:panelGrid>
+                <apex:pageBlockSectionItem >
+                    <c:MultiselectPicklist leftLabel="Available Profiles"
+                leftOption="{!allProfiles}"
+                rightLabel="Selected Profiles"
+                rightOption="{!selectedProfiles}"
+                size="14"
+                width="150px"/>
+                </apex:pageBlockSectionItem>
+                
+               <apex:inputHidden value="{!Release_Tracker__c.profiles_to_lock__c}" id="theHiddenInput"/>
+
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockButtons >
+                <apex:commandButton action="{!Save}" value="Save" />
+                
+                </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

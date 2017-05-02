@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Maintenance_Active_Ind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checks if maintenance is currently active</description>
+        <externalId>false</externalId>
+        <label>Maintenance_Active_Ind</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance_End_Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Start_Date__c</fullName>
+        <description>Maintenance_Start_Date</description>
+        <externalId>false</externalId>
+        <label>Maintenance_Start_Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Maintainence</label>
+    <visibility>Protected</visibility>
+</CustomObject>

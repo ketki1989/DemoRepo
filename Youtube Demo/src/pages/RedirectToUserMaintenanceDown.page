@@ -1,0 +1,5 @@
+<apex:page >
+ <script>
+   <!-- window.top.location.href = 'apex/UserMaintenanceDown';-->
+ </script>
+</apex:page>

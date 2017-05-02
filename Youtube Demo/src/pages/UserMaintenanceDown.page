@@ -1,0 +1,21 @@
+<apex:page sidebar="false" controller="UserMaintenanceController" language="{!locale}">
+ <!-- <h1><i>{!$Label.SalesforceUsers}<br/> <br/>
+  <p>{!$Label.message1} 
+  {!MaintainenceStartDate} and {!MaintainenceEndDate}
+  <br/>
+  <br/>
+  {!$Label.message2}
+  <apex:outputText value=" {!phone} and  {!Email}"></apex:outputText> 
+  </p> 
+  </i>
+  </h1>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'/>
+  <script>
+  
+      $j = jQuery.noConflict();
+  
+      $j( "#phSearchContainer" ).remove();
+      $j(".linkElements").remove();
+      $j("#tabContainer").remove();
+  </script>-->
+</apex:page>

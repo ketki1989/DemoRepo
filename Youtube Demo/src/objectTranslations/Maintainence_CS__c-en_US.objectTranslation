@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maintainence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Maintainence</value>
+    </caseValues>
+    <fields>
+        <label><!-- Maintenance_Active_Ind --></label>
+        <name>Maintenance_Active_Ind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance_End_Date --></label>
+        <name>Maintenance_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance_Start_Date --></label>
+        <name>Maintenance_Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

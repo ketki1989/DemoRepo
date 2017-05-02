@@ -1,0 +1,30 @@
+<apex:page standardController="Release_Window_Config__c" recordSetVar="releaseWindow" sidebar="false"  extensions="Release_Window_Config_C_Extensions">
+<apex:form >
+  <apex:pageBlock mode="edit" title="Admin Release Window" >
+    <apex:pageBlockTable value="{!releaseWindow}" var="rw">
+      <apex:column headerValue="Start date" >
+          <apex:inputField value="{!rw.Release_Start_Date__c}"/>
+      </apex:column>
+      <apex:column headerValue="End date">
+          <apex:inputField value="{!rw.Release_End_Date__c}"/>
+      </apex:column>
+      <apex:column headerValue="UserLockOut Status">
+          <apex:inputField value="{!rw.UserLockoutStatus__c}"/>
+      </apex:column>
+      
+    </apex:pageBlockTable>
+    
+     <c:MultiselectPicklist leftLabel="Available Profiles"
+                leftOption="{!allProfiles}"
+                rightLabel="Selected Profiles"
+                rightOption="{!selectedProfiles}"
+                size="14"
+                width="150px"/>
+                
+    <apex:pageBlockButtons location="bottom" >
+        <apex:commandButton action="{!Save}" value="Custom_Save"/>
+          <apex:commandLink styleClass="btn" style="text-decoration:none;padding:4px;"  action="{!Savelink}" value="Custom_Savelink" target="_blank"/>
+    </apex:pageBlockButtons>
+  </apex:pageBlock>
+</apex:form>
+</apex:page>

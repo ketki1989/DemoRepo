@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ttu@yy.com</contactEmail>
+    <label>SomeDoTNet</label>
+    <oauthConfig>
+        <callbackUrl>https://login.saleforce.com</callbackUrl>
+        <consumerKey>3MVG9szVa2RxsqBZdgYesgHuDN6NyYNYY7GfbO8JzLCKTKAf73VtXYco8g9AUq2mtB5fcmS_fmsPmkgUd7s6p</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+    </oauthConfig>
+</ConnectedApp>
